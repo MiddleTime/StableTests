@@ -15,7 +15,7 @@ import java.util.function.Predicate;
  * @author inbox_bv8awe9
  */
 //пример того как делалось до 8-й Java (без лямбда)
-public class Main {
+public class MainV8 {
 
 
     
@@ -31,21 +31,11 @@ public class Main {
         List<Integer> integers = Arrays.asList(1,2,3,4);
         List<String> strings = Arrays.asList("bb", "a", "ccc");
         
-        System.out.println(filter(integers, new Predicate<Integer>(){
-            @Override
-            public boolean test(Integer i) {
-                return i%2 == 0;
-            }
-        }));
+       //тоже самое, только с лямбда
+        System.out.println(filter(integers, (Integer i) -> i%2 == 0));
         
-        System.out.println("Reduce (+): " + integers + " -> " + reduce(integers, 0, new BiOperator<Integer>(){
-            @Override
-            public Integer apply(Integer init, Integer i) {
-                return init +i;
-            }
-        }));
-        //Integer[] a = {1,2,3};
-      //  ArrayList<Integer> integers2 = new ArrayList<>(a);// нельзя , такак есть второй класс ArrayList в Java
+        //то же самое, только с лямбда
+        System.out.println("Reduce (+): " + integers + " -> " + reduce(integers, 0, (Integer init, Integer i) -> init +i));
         
     }
     private static <T> List<T> filter(List<T> list, Predicate<T> predicate) {
