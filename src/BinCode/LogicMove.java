@@ -35,6 +35,6 @@ public class LogicMove {
     в таком случае левый бит, который несет знак превращается в ноль
     */
     public static void main(String[] args) {
-        System.out.println(-100>>>30);
+        System.out.println(16>>2);
     }
 }
