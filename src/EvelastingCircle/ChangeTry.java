@@ -11,28 +11,27 @@ package EvelastingCircle;
  */
 public class ChangeTry {
     public static void main(String[] args) {
-        int counter3 = 1;
+        int counter = 1;
         int n = 30;
-//        for (int i = 0; i < n; i--) {
-//            System.out.println("* " + counter++ );
-//            
-//        }
+        for (int i = 0; i < n; i--) {
+            System.out.println("* " + counter++ );
+        }
         //нужно поменять 1 символ, чтобы цикл не был бесконечным.
         //вариант 1
-         for (int i = 0; i < n; n--) {
-            System.out.println("* " + counter3++ );
-            
-        }
-         System.out.println("_____________________________");
-         //вариант 2
-         n = 30;
-         counter3 = 1;
-         for (int i = 0; -i < n; i--) {
-            System.out.println("* " + counter3++ );
-            
-        }
-        System.out.println("__"); 
-        System.out.println(""); 
-        System.out.println("ljlljlkjl");
+//         for (int i = 0; i < n; n--) {
+//            System.out.println("* " + counter3++ );
+//            
+//        }
+//         System.out.println("_____________________________");
+//         //вариант 2
+//         n = 30;
+//         counter3 = 1;
+//         for (int i = 0; -i < n; i--) {
+//            System.out.println("* " + counter3++ );
+//            
+//        }
+//        System.out.println("__"); 
+//        System.out.println(""); 
+//        System.out.println("ljlljlkjl");
     }
 }
