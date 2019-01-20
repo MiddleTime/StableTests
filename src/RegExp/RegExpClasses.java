@@ -1,3 +1,5 @@
+package RegExp;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -76,6 +78,44 @@ public class RegExpClasses {
 //        }
 
 
+//        Pattern regex = Pattern.compile("[А-ЯA-Z].{15,}?(\\.|\\!|\\?)(?=\\ |\\r|\\n|$)");
+//        Matcher m = regex.matcher("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus tellus nec nulla gravida, sed congue nunc hendrerit. Integer interdum elementum lorem id rutrum. Ut sit amet interdum mauris. Phasellus mollis ex eleifend lacus molestie dictum. Fusce blandit, ligula non condimentum maximus, massa nisi ullamcorper odio, et vehicula nisl nunc nec orci. Sed neque diam, gravida eu blandit ullamcorper, porttitor non lorem. Etiam sagittis diam a dolor feugiat placerat. Suspendisse enim turpis, imperdiet in tellus sit amet, consectetur porta magna. Suspendisse odio nulla, imperdiet eget augue in, pulvinar hendrerit nunc. Aenean ut cursus tellus, nec vehicula ante. Vestibulum ornare erat non ante tempus, eu aliquet felis dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris eget arcu imperdiet, laoreet erat non, imperdiet leo. Sed arcu mi, ornare non leo sed, faucibus semper nunc.");
+//        while (m.find()) {
+//            System.out.println(m.group() + " ");
+//
+//        }
+       //  ^([4-6][0-9][0-9])$    - для поиска числа от 400 до 699
 
+//        Pattern regex = Pattern.compile("(?<=(^|;)).*?(?=(;|$|\\r\\n))");
+//        Matcher m = regex.matcher("ljewef;fwefwefwefwe;llkjljklwe;ljljl;jwwefwefw;");
+//        while (m.find()) {
+//            System.out.println(m.group() + " ");
+//
+//        }
+
+//        Pattern regex = Pattern.compile("([^\\\\]+$)");
+//        Matcher m = regex.matcher("D:\\downloads chrome\\новая каркасная.dt");
+//        while (m.find()) {
+//            System.out.println(m.group() + " ");
+//
+//        }
+
+
+//        Pattern regex = Pattern.compile("<.*?>");
+//        Matcher m = regex.matcher("<!DOCTYPE html>\n" +
+//                "<html>\n" +
+//                "<head>\n" +
+//                "\t<meta charset=\"utf-8\" />\n" +
+//                "\t<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">\n" +
+//                "\t<title>Povara</title>\n" +
+//                "\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n" +
+//                "\t<link rel=\"stylesheet\" type=\"text/css\" media=\"screen\" href=\"main.css\" />\n" +
+//                "\t<script src=\"main.js\"></script>\n" + "ауфуафцафцафуфцфафцаф" +
+//                "</head>\n" +
+//                "<body>");
+//        while (m.find()) {
+//            System.out.println(m.group() + " ");
+//
+//        }
     }
 }

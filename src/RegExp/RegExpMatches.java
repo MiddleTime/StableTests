@@ -1,3 +1,5 @@
+package RegExp;
+
 public class RegExpMatches {
     public static void main(String[] args) {
         //matches - для сравнения текста
