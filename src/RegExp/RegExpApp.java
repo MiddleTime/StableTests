@@ -14,6 +14,7 @@ public class RegExpApp {
     private static final String EMAIL_PATTERN = "^[a-zA-Z0-9_-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$";
     //еще вариант [\.\-_A-Za-z0-9]+?@[\.\-A-Za-z0-9]+?[\.A-Za-z0-9]{2,}
     private  static  final  String PASSWORD_PATTERN = "((?=.*\\d)(?=.*[a-z])(?=.*[A-Z]).{8,15})";
+   
     private  static  final  String IP_PATTERN = "^([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
                                                  "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +
                                                  "([01]?\\d\\d?|2[0-4]\\d|25[0-5])\\." +

@@ -61,15 +61,15 @@ public class RegExpMatches {
 //        System.out.println(vd4.matches("[^abc]*"));
 
         //например определить с помощью "." является ли сайт валидным или нет
-        String url = "http://www.google.com";
-        System.out.println(url.matches("http://www\\..+\\.(com|ru)"));
+//        String url = "http://www.google.com";
+//        System.out.println(url.matches("http://www\\..+\\.(com|ru)"));
 
 //        String a = "123223";
 //        System.out.println(a.matches("\\d{2}"));
 //        System.out.println(a.matches("\\d{2,}"));
 
 
-        System.out.println("myemail@mail.ru".matches("\\b[\\w.%-]+@[-.\\w]+\\.[A-Za-z]{2,4}\\b"));
+//        System.out.println("myemail@mail.ru".matches("\\b[\\w.%-]+@[-.\\w]+\\.[A-Za-z]{2,4}\\b"));
 
 
     }
