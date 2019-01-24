@@ -38,12 +38,12 @@ public class RegExpMatches {
 //        String c = "+356546564";
 //        System.out.println(c.matches("\\d+"));
 
-//        String a =  "4538764";
-//        String b =  "-4577834";
-//        String c =  "+45668734";
-//        System.out.println(a.matches("(-|\\+)?\\d*"));
-//        System.out.println(b.matches("(-|\\+)?\\d*"));
-//        System.out.println(c.matches("(-|\\+)?\\d*"));
+        String a =  "4538764";
+        String b =  "-4577834";
+        String c =  "+45668734";
+        System.out.println(a.matches("(-|\\+)?\\d*"));
+        System.out.println(b.matches("(-|\\+)?\\d*"));
+        System.out.println(c.matches("(-|\\+)?\\d*"));
 //
 //        String v = "h9293492";
 //        System.out.println(v.matches("[a-zA-Z]\\d+"));
