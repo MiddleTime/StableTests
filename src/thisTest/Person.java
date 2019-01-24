@@ -26,9 +26,9 @@ public class Person {
     
     
     void seyHello(){
-        System.out.println("Hello!");
+        System.out.println("Hello from " + name + " " + lastName);
     }
     void sayBye(){
-        System.out.println("Bye!");
+        System.out.println(name + " " + lastName + " Bye!");
     }
 }

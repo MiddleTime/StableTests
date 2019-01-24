@@ -77,10 +77,12 @@ public class StartTest {
      
      
      Person myPersons = new Person("Sergei", "Petrov");
-        System.out.println(myPersons.toString());
+     System.out.println(myPersons.toString());
      myPersons.seyHello();
      myPersons.sayBye();
       
+     
+     
      
     }
 }
