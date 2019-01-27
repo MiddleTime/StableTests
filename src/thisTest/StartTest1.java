@@ -6,7 +6,9 @@
 package thisTest;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -24,7 +26,17 @@ public class StartTest1 {
             person.seyHello();
             person.sayBye();
         }
+        System.out.println("------------------------------");
+        Map<Integer, Person> persons2 = new HashMap<>();
+        persons2.put(1, new Person("Sergei", "Petrov"));
+        persons2.put(2, new Person("Alexei", "Smirnov"));
+        persons2.put(3, new Person("Petr", "Green"));
         
+         for (Map.Entry<Integer, Person> entry: persons2.entrySet()) {
+            //System.out.println(entry.getKey() + ": " + entry.getValue());
+            entry.getValue().seyHello();
+            entry.getValue().sayBye();
+        }
         
     }
 }

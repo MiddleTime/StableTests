@@ -80,7 +80,7 @@ public class StartTest {
      System.out.println(myPersons.toString());
      myPersons.seyHello();
      myPersons.sayBye();
-      
+     //а если нам нужно создать не одного, а тысячи persons?? 
      
      
      
