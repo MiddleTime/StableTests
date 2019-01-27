@@ -18,11 +18,12 @@ public class Main {
         //System.in - читаем поток байтов
         //InputStreamReader обертка - считает символы
         //bufferedReader - считывает строки
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String str = br.readLine();
-        StringBuilder str2 = new StringBuilder(str); 
-        System.out.println("You enter: " + str);
-        System.out.println("But reverse form will be: " + str2.reverse());
+        
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//        String str = br.readLine();
+//        StringBuilder str2 = new StringBuilder(str); 
+//        System.out.println("You enter: " + str);
+//        System.out.println("But reverse form will be: " + str2.reverse());
         
         //а теперь посмотрим как работает System.in
 //        while(true){
