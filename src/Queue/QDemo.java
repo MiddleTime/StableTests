@@ -28,15 +28,22 @@ public class QDemo {
                 if (ch != (char ) 0) System.out.print(ch);
                 
             }
-            System.out.println("\n");
-            System.out.println("Использование очереди smallQ для генерации ошибок");
+           // System.out.println("\n");
+            System.out.println("\nИспользование очереди smallQ для генерации ошибок");
             for (i = 0;  i< 5; i++) {
                 System.out.print("Попытка сохранения " + (char) ('Z'-i));
                 smallQ.put((char) ('Z'-i));
                 System.out.println();
                 
             }
-            System.out.println();
+            
+            
+            
+            
+            
+            
+            
+            
             //дополнительные ошибки при обращении к очереди smallQ
             System.out.println("Содержимое smallQ: ");
             for ( i = 0; i < 5; i++) {
@@ -44,7 +51,9 @@ public class QDemo {
                 if (ch != (char) 0) System.out.print(ch);
             } 
             System.out.println(Thread.currentThread().getName());
-        } 
+        
+            System.out.println((char)('d'-1));
+    } 
         
     }
 
