@@ -4,11 +4,11 @@ package Exceptions;
 /**
  * Обработка исключений.
  */
-class UserException extends Exception {
-    public void method() {
-        System.out.println("Мое исключение!");
-    }
-}
+//class UserException extends Exception {
+//    public void method() {
+//        System.out.println("Мое исключение!");
+//    }
+//}
 
 public class Ex5 {
     public static void main(String[] args) {
