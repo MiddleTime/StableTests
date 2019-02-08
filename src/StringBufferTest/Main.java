@@ -16,14 +16,16 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         //System.in - читаем поток байтов
-        //InputStreamReader обертка - считает символы
+        //InputStreamReader обертка - преобразует поток байтов в поток символов
         //bufferedReader - считывает строки
         
-//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        String str = br.readLine();
-//        StringBuilder str2 = new StringBuilder(str); 
-//        System.out.println("You enter: " + str);
-//        System.out.println("But reverse form will be: " + str2.reverse());
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String str = br.readLine();
+        System.out.println(str.isEmpty());
+        System.out.println(str.length());
+        StringBuilder str2 = new StringBuilder(str); 
+        System.out.println("You enter: " + str);
+        System.out.println("But reverse form will be: " + str2.reverse());
         
         //а теперь посмотрим как работает System.in
 //        while(true){
@@ -32,12 +34,12 @@ public class Main {
 //            
 //        }
         
-        InputStreamReader isr = new InputStreamReader(System.in);
-        for(;;){
-        int isrValue = isr.read();
-          System.out.println(isrValue); //считывается в один прием. произошло преобразование в UTF-16.  
-          System.out.println((char)isrValue);            
-        }
+//        InputStreamReader isr = new InputStreamReader(System.in);
+//        for(;;){
+//        int isrValue = isr.read();
+//          System.out.println(isrValue); //считывается в один прием. произошло преобразование в UTF-16.  
+//          System.out.println((char)isrValue);            
+//        }
         
     }
 }
