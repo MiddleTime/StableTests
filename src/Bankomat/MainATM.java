@@ -15,8 +15,8 @@ import java.util.logging.Logger;
 public class MainATM {
     static int amount = 100;
     
-     //static void getMoney(int a){  //это не синхронизированный метод, поэтому потоки спишут больше денег
-    synchronized static void getMoney(int a){
+     static void getMoney(int a){  //это не синхронизированный метод, поэтому потоки спишут больше денег
+    //synchronized static void getMoney(int a){
         if (amount >= a) {
             try {
                 Thread.sleep(10); //эмулируем чтобы потоки могли списать больше денег чем есть

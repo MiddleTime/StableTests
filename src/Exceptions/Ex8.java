@@ -14,7 +14,7 @@ package Exceptions;
 
 public class Ex8 {
     public static void main(String[] args) {
-       //также возможно (на собеседовании может быть - try и без catch
+       
         try {
             System.out.println("Hello!");
         } finally {
