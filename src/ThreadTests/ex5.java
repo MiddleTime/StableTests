@@ -14,7 +14,7 @@ public class ex5 {
     static class Recipe implements Runnable{
         
         @Override
-        public void run() { 
+         public void run() { 
            
             for (int i = 0; i < 100; i++) {
                System.err.println(Thread.currentThread().getName() + "... готовит... " + i);
@@ -29,5 +29,15 @@ public class ex5 {
         new Thread(new Recipe()).start();
         new Thread(new Recipe()).start();
         new Thread(new Recipe()).start();
+        
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.err.println("java 8");
+            }
+        }); 
+        new Thread(() -> {
+            System.err.println("java 8");
+        });
     }
 }
